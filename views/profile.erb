@@ -1,11 +1,17 @@
 
     <img src="<%= params['picture'] %>" alt="none" class ="profile-pic">
-    <ul>
-      <li><%= params['name']%></li>
-      <li><%= params['sex']%></li>
-      <li><%= params['occupation']%></li>
-      <li><%= params['lookingFor']%></li>
-    </ul>
+    <p>
+      My name is <%= params['name']%>
+    </p>
+    <p>
+        I am a <%= params['sex']%>
+    </p>
+    <p>
+       I dabble in <%= params['occupation']%>
+    </p>
+    <p>
+      I am looking for <%= params['lookingFor']%>
+    </p>
 
     <form action="//formspree.io/international.resource.help@gmail.com"
       method="POST">

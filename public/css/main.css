@@ -5,13 +5,12 @@ input{
   margin: 20px 10px;
 }
 label{
-width: 100px;
-display: inline-block;
-
+  width: 100px;
+  display: inline-block;
 }
 #comments{
   width: 300px;
 }
 img.profile-pic{
-min-width: 100px;
+  max-width: 100px;
 }

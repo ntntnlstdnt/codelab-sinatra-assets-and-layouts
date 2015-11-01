@@ -1,26 +1,22 @@
 
     <img src="<%= params['picture'] %>" alt="none" class ="profile-pic">
-    <p>
-      My name is <%= params['name']%>
-    </p>
-    <p>
-        I am a <%= params['sex']%>
-    </p>
-    <p>
-       I dabble in <%= params['occupation']%>
-    </p>
-    <p>
-      I am looking for <%= params['lookingFor']%>
-    </p>
+    <p>My name is <%= params['name'] %></p>
+    <p>I am a <%= params['sex'] %></p>
+    <p>I dabble in <%= params['occupation'] %></p>
+    <p>I am looking for <%= params['lookingFor'] %></p>
 
-    <form action="//formspree.io/international.resource.help@gmail.com"
+    <form action="//formspree.io/<%= params['_sendto'] %>"
       method="POST">
-     <label for="name">Name</label>
-    <input type="text" name="name"><br>
-    <label for="email">Email</label>
-    <input type="email" name="_replyto"><br>
-     <label for="_comments">Comments</label>
-    <textarea name="_comments" rows="5" id="comments"></textarea><br>
-    <input type="submit" value="Send"><br>
+
+      <label for="name">Name</label>
+      <input type="text" name="name"><br>
+
+      <label for="email">Email</label>
+      <input type="email" name="_replyto"><br>
+
+      <label for="_comments">Comments</label>
+      <textarea name="_comments" rows="5" id="comments"></textarea><br>
+
+      <input type="submit" value="Send"><br>
 
   </form>
